@@ -30,7 +30,14 @@
       <input type="text" th:field="*{deliveryName}"/>
       <span class="validationError"
             th:if="${#fields.hasErrors('deliveryName')}"
-            th:errors="*{deliveryName}">Name Error</span>
+            th:errors="*{deliveryName}">Name Error</span>            
+      <br/>
+
+      <label for="deliveryNickname">Nickname: </label>
+      <input type="text" th:field="*{deliveryNickname}"/>
+      <span class="validationError"
+            th:if="${#fields.hasErrors('deliveryNickname')}"
+            th:errors="*{deliveryNickname}">Nickname Error</span>
       <br/>
 
       <label for="deliveryStreet">Street address: </label>
